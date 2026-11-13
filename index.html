@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="bn"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Rahmah Fashion – শালীনতায় সৌন্দর্য</title>
+<meta name="theme-color" content="#5b1a3a">
+<link rel="icon" href="assets/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--m:#5b1a3a;--p:#8a3a6a;--c:#fbf3e8;--g:#c9a35b;--t:#2a1520;--w:#fff}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+body{font-family:'Hind Siliguri',system-ui,sans-serif;background:var(--c);color:var(--t);padding-bottom:76px}
+button{font-family:inherit;cursor:pointer;border:0}
+input,select,textarea{font-family:inherit;font-size:15px;width:100%;padding:11px;border:1px solid #dcc9bb;border-radius:10px;background:#fff;margin-top:4px}
+header{position:sticky;top:0;z-index:20;background:linear-gradient(90deg,var(--m),var(--p));padding:8px 12px;display:flex;gap:10px;align-items:center}
+header img.lg{width:42px;height:42px;border-radius:50%;background:#fff}
+.sr{flex:1;position:relative}.sr input{margin:0;border-radius:22px;padding:9px 14px}
+.ic{position:relative;background:none;color:#fff;font-size:24px}
+.cnt{position:absolute;top:-6px;right:-8px;background:var(--g);color:var(--m);font-size:11px;font-weight:700;border-radius:10px;min-width:18px;padding:0 4px}
+main{max-width:1000px;margin:auto;padding:10px}
+.hero img{width:100%;border-radius:14px;display:block}
+.ht{background:#fff;border-radius:14px;padding:14px;margin-top:8px;text-align:center;box-shadow:0 2px 10px #5b1a3a14;animation:up .6s}
+.ht h2{color:var(--m);font-size:19px}.ht p{margin:4px 0 10px;color:#6b4a5b;font-size:14px}
+.cta{background:linear-gradient(90deg,var(--m),var(--p));color:#fff;padding:11px 26px;border-radius:24px;font-weight:600;font-size:15px}
+.cats{display:flex;gap:10px;overflow-x:auto;padding:12px 2px;scrollbar-width:none}
+.cat{flex:0 0 auto;width:78px;text-align:center;background:none;color:var(--t);font-size:12px}
+.cat i{display:grid;place-items:center;width:58px;height:58px;margin:0 auto 4px;border-radius:50%;background:#fff;border:2px solid #e8d4bf;font-size:26px;font-style:normal}
+.cat.on i{border-color:var(--m);background:#f3dfe8}
+h3.st{margin:6px 2px;color:var(--m)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:720px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px #5b1a3a12;animation:up .5s}
+.im{position:relative;aspect-ratio:4/5;background:#efe2d6}.im img{width:100%;height:100%;object-fit:cover}
+.bd{position:absolute;top:6px;left:6px;background:#d6336c;color:#fff;font-size:12px;padding:1px 7px;border-radius:8px}
+.ci{padding:8px}.ci h4{font-size:14px;font-weight:500;height:40px;overflow:hidden;line-height:1.4}
+.pr b{color:var(--m);font-size:17px}.pr s{color:#999;font-size:12px;margin-left:6px}
+.sz{font-size:11.5px;color:#7a6070;margin:2px 0 6px}
+.b1,.b2{width:100%;padding:8px;border-radius:8px;font-size:13px;font-weight:600;margin-top:4px}
+.b1{background:#f3dfe8;color:var(--m)}.b2{background:var(--m);color:#fff}
+.bar{position:fixed;bottom:0;left:0;right:0;z-index:30;background:#fff;display:flex;border-top:1px solid #e8d4bf;padding-bottom:env(safe-area-inset-bottom)}
+.bar button{flex:1;background:none;padding:7px 0;font-size:11px;color:#6b4a5b}.bar button span{display:block;font-size:21px}.bar .on{color:var(--m);font-weight:700}
+.wf{position:fixed;right:14px;bottom:88px;z-index:25;width:54px;height:54px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:28px;text-decoration:none;box-shadow:0 4px 14px #0004;animation:pl 2s infinite}
+.box{background:#fff;border-radius:12px;padding:12px;margin-bottom:10px}
+.row{display:flex;gap:10px;align-items:center}.row img{width:70px;height:88px;object-fit:cover;border-radius:8px}
+.row>div{flex:1}.q{display:inline-flex;align-items:center;gap:8px}.q button{width:28px;height:28px;border-radius:50%;background:#f3dfe8;color:var(--m);font-size:16px}
+.sm select{width:auto;padding:4px;margin:2px 4px 0 0;font-size:13px}
+.tot div{display:flex;justify-content:space-between;padding:4px 0}.tot .g{font-weight:700;font-size:18px;color:var(--m);border-top:1px dashed #ccb;margin-top:4px;padding-top:8px}
+label{font-size:13px;font-weight:600;display:block;margin-top:8px}
+.pay{border:2px solid #e8d4bf;border-radius:10px;padding:10px;margin-top:8px;display:block}.pay.on{border-color:var(--m);background:#fbeef4}
+.pay input{width:auto;margin-right:6px}
+.sheet{position:fixed;inset:0;z-index:50;background:#0007;display:flex;align-items:flex-end;justify-content:center}
+.sheet>div{background:var(--c);width:100%;max-width:600px;max-height:92vh;overflow:auto;border-radius:18px 18px 0 0;padding:12px;animation:up .3s}
+.gal{display:flex;gap:6px;overflow-x:auto;scroll-snap-type:x mandatory}.gal img{width:100%;flex:0 0 100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;scroll-snap-align:start}
+.chip{display:inline-block;padding:6px 13px;border:1.5px solid #cdb;border-radius:18px;margin:4px 4px 0 0;background:#fff;font-size:13px}.chip.on{background:var(--m);color:#fff;border-color:var(--m)}
+.wa{display:block;text-align:center;background:#25d366;color:#fff;padding:11px;border-radius:10px;font-weight:600;text-decoration:none;margin-top:8px}
+.toast{position:fixed;top:70px;left:50%;transform:translateX(-50%);background:var(--m);color:#fff;padding:9px 18px;border-radius:20px;z-index:99;font-size:14px}
+footer{text-align:center;font-size:12px;color:#8a7080;padding:16px}footer a{color:var(--m)}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes pl{50%{box-shadow:0 0 0 10px #25d36633}}
+</style></head><body>
+<header><img class="lg" src="assets/logo.png" alt="Rahmah Fashion" onclick="go('home')">
+<div class="sr"><input id="q" placeholder="বোরকা খুঁজুন..." oninput="S.q=this.value;view=='home'?grid():go('home')"></div>
+<button class="ic" onclick="go('cart')">🛒<span class="cnt" id="cc">0</span></button></header>
+<main id="app"></main>
+<a class="wf" id="wf" target="_blank" rel="noopener">💬</a>
+<nav class="bar" id="bar"></nav><div id="ov"></div>
+<script>
+const $=s=>document.querySelector(s),bn=n=>String(n).replace(/\d/g,d=>"০১২৩৪৫৬৭৮৯"[d]);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const ld=(k,d)=>{try{return JSON.parse(localStorage[k])??d}catch{return d}};
+let D={products:[],categories:[],settings:{delivery:{in:80,out:130},whatsapp:"8801737588395",bkash:"",nagad:""}};
+let S={q:"",cat:"all"},cart=ld("cart",[]),view="home",zone=localStorage.zone||"in",sel={},pay="cod",last=null;
+const DIST="ঢাকা,গাজীপুর,নারায়ণগঞ্জ,নরসিংদী,মানিকগঞ্জ,মুন্সিগঞ্জ,টাঙ্গাইল,কিশোরগঞ্জ,ফরিদপুর,গোপালগঞ্জ,মাদারীপুর,রাজবাড়ী,শরীয়তপুর,চট্টগ্রাম,কক্সবাজার,কুমিল্লা,ফেনী,ব্রাহ্মণবাড়িয়া,চাঁদপুর,লক্ষ্মীপুর,নোয়াখালী,খাগড়াছড়ি,রাঙ্গামাটি,বান্দরবান,রাজশাহী,নাটোর,নওগাঁ,চাঁপাইনবাবগঞ্জ,পাবনা,বগুড়া,সিরাজগঞ্জ,জয়পুরহাট,খুলনা,বাগেরহাট,সাতক্ষীরা,যশোর,নড়াইল,মাগুরা,ঝিনাইদহ,কুষ্টিয়া,চুয়াডাঙ্গা,মেহেরপুর,বরিশাল,ভোলা,পটুয়াখালী,পিরোজপুর,বরগুনা,ঝালকাঠি,সিলেট,মৌলভীবাজার,হবিগঞ্জ,সুনামগঞ্জ,ময়মনসিংহ,জামালপুর,নেত্রকোণা,শেরপুর,রংপুর,দিনাজপুর,গাইবান্ধা,কুড়িগ্রাম,লালমনিরহাট,নীলফামারী,ঠাকুরগাঁও,পঞ্চগড়".split(",");
+const fin=p=>Math.round(p.price*(1-(p.disc||0)/100));
+const ph=()=>"data:image/svg+xml;utf8,"+encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' width='600' height='750'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#5b1a3a'/><stop offset='1' stop-color='#a85a88'/></linearGradient></defs><rect width='600' height='750' fill='url(#g)'/><text x='300' y='400' font-size='90' text-anchor='middle'>🧕</text><text x='300' y='480' font-size='30' text-anchor='middle' fill='#f5e6d3'>Rahmah Fashion</text></svg>");
+const im=p=>(p.images&&p.images[0])||ph();
+const P=id=>D.products.find(p=>p.id==id);
+const wa=t=>`https://wa.me/${D.settings.whatsapp}?text=${encodeURIComponent(t)}`;
+const save=()=>{localStorage.cart=JSON.stringify(cart);$("#cc").textContent=bn(cart.reduce((a,b)=>a+b.qty,0))};
+const toast=t=>{const e=document.createElement("div");e.className="toast";e.textContent=t;document.body.append(e);setTimeout(()=>e.remove(),1600)};
+const sub=()=>cart.reduce((a,l)=>a+(P(l.pid)?fin(P(l.pid))*l.qty:0),0);
+const dlv=()=>cart.length?(zone=="in"?D.settings.delivery.in:D.settings.delivery.out):0;
+
+function go(v){view=v;if(v=="home"&&arguments[1])S.cat=arguments[1];$("#ov").innerHTML="";render();scrollTo(0,0)}
+function nav(){const b=[["home","🏠","হোম"],["cats","🛍️","ক্যাটাগরি"],["cart","🛒","কার্ট"],["wa","💬","WhatsApp"],["acc","👤","অ্যাকাউন্ট"]];
+$("#bar").innerHTML=b.map(x=>`<button class="${view==x[0]||(view=="checkout"&&x[0]=="cart")?"on":""}" onclick="${x[0]=="wa"?`window.open('${wa("আসসালামু আলাইকুম, Rahmah Fashion থেকে কিছু জানতে চাই।")}')`:`go('${x[0]}')`}"><span>${x[1]}</span>${x[2]}</button>`).join("");
+$("#wf").href=wa("আসসালামু আলাইকুম, Rahmah Fashion থেকে কিছু জানতে চাই।")}
+function card(p){const o=p.stock<=0;return `<div class="card"><div class="im" onclick="openP('${p.id}')"><img loading="lazy" src="${im(p)}" alt="">${p.disc?`<b class="bd">-${bn(p.disc)}%</b>`:""}</div><div class="ci"><h4 onclick="openP('${p.id}')">${esc(p.name)}</h4><div class="pr"><b>৳${bn(fin(p))}</b>${p.disc?`<s>৳${bn(p.price)}</s>`:""}</div><div class="sz">সাইজ: ${esc((p.sizes||[]).join(", "))}</div>${o?`<button class="b1" disabled>স্টক শেষ</button>`:`<button class="b1" onclick="add('${p.id}')">কার্টে যোগ করুন</button><button class="b2" onclick="buy('${p.id}')">অর্ডার করুন</button>`}</div></div>`}
+function grid(){const q=S.q.trim().toLowerCase();const l=D.products.filter(p=>(S.cat=="all"||p.cat==S.cat)&&(!q||p.name.toLowerCase().includes(q)));$("#pg").innerHTML=l.length?l.map(card).join(""):"<p style='grid-column:1/-1;text-align:center;padding:30px'>কোনো পণ্য পাওয়া যায়নি</p>"}
+function catBar(){return `<div class="cats"><button class="cat ${S.cat=="all"?"on":""}" onclick="S.cat='all';render()"><i>🛍️</i>সব পণ্য</button>${D.categories.map(c=>`<button class="cat ${S.cat==c.id?"on":""}" onclick="S.cat='${c.id}';go('home')"><i>${esc(c.icon)}</i>${esc(c.name)}</button>`).join("")}</div>`}
+function render(){nav();save();const a=$("#app");
+if(view=="home")a.innerHTML=`<div class="hero"><img src="assets/banner.jpg" alt="Rahmah Fashion"></div><div class="ht"><h2>পরিপূর্ণ পর্দায় শালীনতার অনন্য সৌন্দর্য</h2><p>আপনার পছন্দের বোরকা এখন Rahmah Fashion-এ</p><button class="cta" onclick="document.getElementById('pg').scrollIntoView({behavior:'smooth'})">এখনই কেনাকাটা করুন</button></div>${catBar()}<h3 class="st">${S.cat=="all"?"সব পণ্য":esc((D.categories.find(c=>c.id==S.cat)||{}).name||"")}</h3><div class="grid" id="pg"></div><footer>🚚 সারা বাংলাদেশে ক্যাশ অন ডেলিভারি<br>© Rahmah Fashion · <a href="/admin.html">অ্যাডমিন</a></footer>`,grid();
+else if(view=="cats")a.innerHTML=`<h3 class="st">ক্যাটাগরি</h3><div class="grid">${D.categories.map(c=>`<div class="box" style="text-align:center" onclick="go('home','${c.id}')"><div style="font-size:40px">${esc(c.icon)}</div><b>${esc(c.name)}</b></div>`).join("")}</div>`;
+else if(view=="cart")cartV(a);else if(view=="checkout")checkV(a);else if(view=="acc")accV(a);else if(view=="done")doneV(a)}
+function add(id,size,color,qty=1,quiet){const p=P(id);size=size||(p.sizes||[])[0]||"";color=color||(p.colors||[])[0]||"";const l=cart.find(x=>x.pid==id&&x.size==size&&x.color==color);l?l.qty+=qty:cart.push({pid:id,size,color,qty});save();if(!quiet)toast("কার্টে যোগ হয়েছে ✓")}
+function buy(id){add(id,0,0,1,1);go("checkout")}
+function openP(id){const p=P(id);sel={id,size:(p.sizes||[])[0]||"",color:(p.colors||[])[0]||"",qty:1};sheet()}
+function sheet(){const p=P(sel.id),imgs=p.images&&p.images.length?p.images:[ph()];
+const chips=(a,k)=>(a||[]).map(v=>`<span class="chip ${sel[k]==v?"on":""}" onclick="sel.${k}='${esc(v).replace(/'/g,"")}';sheet()">${esc(v)}</span>`).join("");
+const msg=`আসসালামু আলাইকুম, আমি এই বোরকাটি অর্ডার করতে চাই:\n\n📦 ${p.name}\nসাইজ: ${sel.size}\nকালার: ${sel.color}\nদাম: ৳${bn(fin(p))}\nপরিমাণ: ${bn(sel.qty)}\nমোট: ৳${bn(fin(p)*sel.qty)}`;
+$("#ov").innerHTML=`<div class="sheet" onclick="if(event.target==this)this.remove()"><div><div class="gal">${imgs.map(s=>`<img src="${s}" alt="">`).join("")}</div><h3 style="margin-top:10px">${esc(p.name)}</h3><div class="pr"><b style="font-size:22px">৳${bn(fin(p))}</b>${p.disc?`<s>৳${bn(p.price)}</s> <b class="bd" style="position:static">-${bn(p.disc)}%</b>`:""}</div><p style="font-size:13px;margin:6px 0">${esc(p.desc)}</p><label>সাইজ</label>${chips(p.sizes,"size")}<label>কালার</label>${chips(p.colors,"color")}<label>পরিমাণ</label><div class="q"><button onclick="sel.qty=Math.max(1,sel.qty-1);sheet()">−</button><b>${bn(sel.qty)}</b><button onclick="sel.qty++;sheet()">+</button><small>স্টক: ${bn(p.stock)}</small></div>${p.stock>0?`<button class="b1" style="padding:12px" onclick="add('${p.id}',sel.size,sel.color,sel.qty)">কার্টে যোগ করুন</button><button class="b2" style="padding:12px" onclick="add('${p.id}',sel.size,sel.color,sel.qty,1);go('checkout')">অর্ডার করুন</button><a class="wa" target="_blank" rel="noopener" href="${wa(msg)}">💬 WhatsApp-এ অর্ডার করুন</a>`:`<button class="b1" disabled>স্টক শেষ</button>`}<button class="b1" onclick="$('#ov').innerHTML=''" style="margin-top:8px">বন্ধ করুন</button></div></div>`}
+function cartV(a){if(!cart.length){a.innerHTML=`<div class="box" style="text-align:center;padding:40px">🛒<br>আপনার কার্ট খালি<br><br><button class="cta" onclick="go('home')">কেনাকাটা করুন</button></div>`;return}
+a.innerHTML=`<h3 class="st">শপিং কার্ট</h3>${cart.map((l,i)=>{const p=P(l.pid);if(!p)return"";const o=(arr,v)=>(arr||[]).map(x=>`<option ${x==v?"selected":""}>${esc(x)}</option>`).join("");return `<div class="box row"><img src="${im(p)}" alt=""><div><b style="font-size:14px">${esc(p.name)}</b><div class="sm"><select onchange="cart[${i}].size=this.value;save()">${o(p.sizes,l.size)}</select><select onchange="cart[${i}].color=this.value;save()">${o(p.colors,l.color)}</select></div><div class="pr"><b>৳${bn(fin(p))}</b></div><div class="q"><button onclick="qty(${i},-1)">−</button><b>${bn(l.qty)}</b><button onclick="qty(${i},1)">+</button> <button style="width:auto;padding:0 10px;font-size:12px" onclick="cart.splice(${i},1);render()">মুছুন</button></div></div></div>`}).join("")}
+<div class="box"><label>ডেলিভারি এলাকা</label><select onchange="zone=localStorage.zone=this.value;render()"><option value="in" ${zone=="in"?"selected":""}>ঢাকার ভিতরে</option><option value="out" ${zone=="out"?"selected":""}>ঢাকার বাইরে</option></select><div class="tot" style="margin-top:8px"><div><span>পণ্যের মূল্য</span><span>৳${bn(sub())}</span></div><div><span>ডেলিভারি চার্জ</span><span>৳${bn(dlv())}</span></div><div class="g"><span>সর্বমোট</span><span>৳${bn(sub()+dlv())}</span></div></div></div>
+<button class="cta" style="width:100%;padding:13px" onclick="go('checkout')">অর্ডার করুন</button><a class="wa" target="_blank" rel="noopener" href="${wa(cartMsg())}">💬 কার্টের অর্ডার WhatsApp-এ পাঠান</a>`}
+function qty(i,d){cart[i].qty=Math.max(1,cart[i].qty+d);render()}
+function cartMsg(){return "আসসালামু আলাইকুম, আমি নিচের বোরকাগুলো অর্ডার করতে চাই:\n\n"+cart.map((l,i)=>{const p=P(l.pid);return p?`${bn(i+1)}. ${p.name}\n   সাইজ: ${l.size} | কালার: ${l.color}\n   ৳${bn(fin(p))} × ${bn(l.qty)} = ৳${bn(fin(p)*l.qty)}`:""}).join("\n")+`\n\nপণ্যের মূল্য: ৳${bn(sub())}\nডেলিভারি: ৳${bn(dlv())}\nসর্বমোট: ৳${bn(sub()+dlv())}`}
+function checkV(a){if(!cart.length)return go("cart");const u=ld("cust",{}),s=D.settings;
+const pb=(k,t,n)=>`<label class="pay ${pay==k?"on":""}" onclick="pay='${k}';checkV($('#app'))"><input type="radio" name="pm" ${pay==k?"checked":""}> <b>${t}</b>${pay==k&&k!="cod"?`<div style="font-size:13px;margin-top:6px">📲 <b>${t}</b> নম্বর: <b>${esc(n)}</b> (Send Money)<br>১) উপরের নম্বরে <b>৳${bn(sub()+dlv())}</b> পাঠান<br>২) নিচে Transaction ID দিন<br><input id="trx" placeholder="Transaction ID" value="${esc(window._trx||"")}" oninput="window._trx=this.value" onclick="event.stopPropagation()"></div>`:""}${pay==k&&k=="cod"?`<div style="font-size:13px;margin-top:6px">পণ্য হাতে পেয়ে টাকা দিন</div>`:""}</label>`;
+a.innerHTML=`<h3 class="st">অর্ডার তথ্য</h3><div class="box"><label>নাম *</label><input id="n" value="${esc(u.n)}"><label>মোবাইল নম্বর *</label><input id="ph" type="tel" inputmode="numeric" placeholder="01XXXXXXXXX" value="${esc(u.ph)}"><label>জেলা *</label><select id="d" onchange="zone=localStorage.zone=this.value=='ঢাকা'?'in':'out';ck()">${DIST.map(d=>`<option ${d==(u.d||"ঢাকা")?"selected":""}>${d}</option>`).join("")}</select><label>উপজেলা/থানা *</label><input id="u" value="${esc(u.u)}"><label>সম্পূর্ণ ঠিকানা *</label><textarea id="ad" rows="2">${esc(u.ad)}</textarea></div>
+<div class="box">${cart.map(l=>{const p=P(l.pid);return p?`<div style="font-size:13px;padding:2px 0">${esc(p.name)} (${esc(l.size)}, ${esc(l.color)}) × ${bn(l.qty)} <b style="float:right">৳${bn(fin(p)*l.qty)}</b></div>`:""}).join("")}<div class="tot" id="tt"></div></div>
+<h3 class="st">পেমেন্ট</h3>${pb("bkash","বিকাশ",s.bkash)}${pb("nagad","নগদ",s.nagad)}${pb("cod","ক্যাশ অন ডেলিভারি")}
+<button class="cta" style="width:100%;padding:13px;margin-top:12px" id="ob" onclick="place()">অর্ডার কনফার্ম করুন</button>`;ck()}
+function ck(){const d=$("#d");if(d)zone=d.value=="ঢাকা"?"in":"out";$("#tt").innerHTML=`<div><span>পণ্যের মূল্য</span><span>৳${bn(sub())}</span></div><div><span>ডেলিভারি</span><span>৳${bn(dlv())}</span></div><div class="g"><span>সর্বমোট</span><span>৳${bn(sub()+dlv())}</span></div>`}
+async function place(){const v=i=>$("#"+i).value.trim(),n=v("n"),ph=v("ph"),d=v("d"),u=v("u"),ad=v("ad"),trx=pay!="cod"?(v("trx")||""):"";
+const en=ph.replace(/[০-৯]/g,c=>"০১২৩৪৫৬৭৮৯".indexOf(c));
+if(!n||!u||!ad)return toast("সব তথ্য পূরণ করুন");if(!/^01\d{9}$/.test(en))return toast("সঠিক মোবাইল নম্বর দিন");if(pay!="cod"&&trx.length<6)return toast("Transaction ID দিন");
+localStorage.cust=JSON.stringify({n,ph:en,d,u,ad});const b=$("#ob");b.disabled=true;b.textContent="অপেক্ষা করুন...";
+try{const r=await fetch("/api/order",{method:"POST",body:JSON.stringify({name:n,phone:en,district:d,upazila:u,address:ad,pay,trx,items:cart})});const j=await r.json();if(!r.ok)throw Error(j.error);
+last=j.order;const h=ld("orders",[]);h.unshift(last);localStorage.orders=JSON.stringify(h.slice(0,20));cart=[];window._trx="";view="done";render()}catch(e){toast(e.message||"ত্রুটি হয়েছে");b.disabled=false;b.textContent="অর্ডার কনফার্ম করুন"}}
+function doneV(a){const o=last,pm={bkash:"বিকাশ",nagad:"নগদ",cod:"ক্যাশ অন ডেলিভারি"}[o.pay];
+const m=`আসসালামু আলাইকুম, আমার অর্ডার নম্বর ${o.id}\nনাম: ${o.name}\nমোবাইল: ${o.phone}\nঠিকানা: ${o.address}, ${o.upazila}, ${o.district}\n\n`+o.items.map(i=>`• ${i.name} (${i.size}, ${i.color}) × ${bn(i.qty)} = ৳${bn(i.price*i.qty)}`).join("\n")+`\n\nডেলিভারি: ৳${bn(o.delivery)}\nসর্বমোট: ৳${bn(o.total)}\nপেমেন্ট: ${pm}${o.trx?" (TrxID: "+o.trx+")":""}`;
+a.innerHTML=`<div class="box" style="text-align:center;padding:28px"><div style="font-size:54px">✅</div><h2 style="color:var(--m)">অর্ডার কনফার্ম হয়েছে!</h2><p>অর্ডার নম্বর: <b>${o.id}</b></p><p>সর্বমোট: <b>৳${bn(o.total)}</b> (${pm})</p><p style="font-size:13px;margin-top:8px">${o.pay=="cod"?"পণ্য হাতে পেয়ে টাকা দিন।":"আপনার Transaction ID যাচাই করে আমরা কনফার্ম করব।"} জ্ঞাত কিছু থাকলে WhatsApp-এ জানান।</p><a class="wa" target="_blank" rel="noopener" href="${wa(m)}">💬 WhatsApp-এ অর্ডার জানিয়ে রাখুন</a><br><button class="cta" onclick="go('home')">হোমে যান</button></div>`}
+function accV(a){const u=ld("cust",{}),h=ld("orders",[]);a.innerHTML=`<h3 class="st">আমার অ্যাকাউন্ট</h3><div class="box"><b>${esc(u.n||"অতিথি")}</b><br>${esc(u.ph||"প্রথম অর্ডারের পর তথ্য এখানে সংরক্ষিত থাকবে")}</div><h3 class="st">আমার অর্ডার</h3>${h.length?h.map(o=>`<div class="box"><b>${o.id}</b> · ৳${bn(o.total)}<br><small>${new Date(o.at).toLocaleDateString("bn-BD")} · ${o.items.length}টি পণ্য</small></div>`).join(""):"<div class='box'>কোনো অর্ডার নেই</div>"}<a class="wa" target="_blank" rel="noopener" href="${wa("আসসালামু আলাইকুম")}">💬 সাহায্যের জন্য WhatsApp করুন</a>`}
+(async()=>{try{D=await (await fetch("/api/data")).json()}catch{}render()})();
+</script></body></html>
